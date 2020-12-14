@@ -4,7 +4,7 @@
 ![Parts](https://github.com/paolocavagnolo/555_xmas_fablab/blob/main/img/parts.jpg)
 
 | Nome          |Specifiche |  Q.tà |
-|---------------|:---------:|------:|
+|:--------------|:---------:|------:|
 | Led           |  5mm      |    6  |
 | Timer         |    555    |    1  |
 | Condensatore  | 4uF       |    1  |
