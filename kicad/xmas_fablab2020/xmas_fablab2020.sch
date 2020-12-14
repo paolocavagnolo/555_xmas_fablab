@@ -1,0 +1,253 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Timer:LM555 U1
+U 1 1 5FC5429D
+P 5750 3600
+F 0 "U1" H 5950 4100 50  0000 C CNN
+F 1 "LM555" H 5950 4000 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 5750 3600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm555.pdf" H 5750 3600 50  0001 C CNN
+	1    5750 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5FC551AC
+P 6650 2050
+F 0 "R2" H 6720 2096 50  0000 L CNN
+F 1 "R" H 6720 2005 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P20.32mm_Horizontal" V 6580 2050 50  0001 C CNN
+F 3 "~" H 6650 2050 50  0001 C CNN
+	1    6650 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5FC56B7D
+P 6500 3750
+F 0 "R1" H 6570 3796 50  0000 L CNN
+F 1 "R" H 6570 3705 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P20.32mm_Horizontal" V 6430 3750 50  0001 C CNN
+F 3 "~" H 6500 3750 50  0001 C CNN
+	1    6500 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5FC5700C
+P 7000 3600
+F 0 "R4" V 6793 3600 50  0000 C CNN
+F 1 "R" V 6884 3600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P20.32mm_Horizontal" V 6930 3600 50  0001 C CNN
+F 3 "~" H 7000 3600 50  0001 C CNN
+	1    7000 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5FC5764F
+P 6650 2950
+F 0 "D2" V 6689 2833 50  0000 R CNN
+F 1 "LED" V 6598 2833 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 6650 2950 50  0001 C CNN
+F 3 "~" H 6650 2950 50  0001 C CNN
+	1    6650 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5FC57CA7
+P 6650 2350
+F 0 "D1" V 6689 2233 50  0000 R CNN
+F 1 "LED" V 6598 2233 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 6650 2350 50  0001 C CNN
+F 3 "~" H 6650 2350 50  0001 C CNN
+	1    6650 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:CP1 C1
+U 1 1 5FC58910
+P 6500 4150
+F 0 "C1" H 6615 4196 50  0000 L CNN
+F 1 "CP1" H 6615 4105 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 6500 4150 50  0001 C CNN
+F 3 "~" H 6500 4150 50  0001 C CNN
+	1    6500 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR01
+U 1 1 5FC5AE41
+P 7500 2500
+F 0 "#PWR01" H 7500 2350 50  0001 C CNN
+F 1 "+5V" V 7515 2628 50  0000 L CNN
+F 2 "" H 7500 2500 50  0001 C CNN
+F 3 "" H 7500 2500 50  0001 C CNN
+	1    7500 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5FC5CBDC
+P 7500 2700
+F 0 "#PWR02" H 7500 2450 50  0001 C CNN
+F 1 "GND" V 7505 2572 50  0000 R CNN
+F 2 "" H 7500 2700 50  0001 C CNN
+F 3 "" H 7500 2700 50  0001 C CNN
+	1    7500 2700
+	0    -1   -1   0   
+$EndComp
+Text Label 7500 2700 2    50   ~ 0
+ground
+Text Label 5250 3800 2    50   ~ 0
+power
+Text Label 7150 3600 0    50   ~ 0
+power
+Text Label 5750 4000 3    50   ~ 0
+ground
+Wire Wire Line
+	6250 3600 6500 3600
+Connection ~ 6500 3600
+Wire Wire Line
+	6500 3600 6850 3600
+Text Label 5250 3400 2    50   ~ 0
+trigger
+Text Label 6900 4000 0    50   ~ 0
+trigger
+Wire Wire Line
+	6500 3900 6500 4000
+Wire Wire Line
+	6500 4000 6900 4000
+Wire Wire Line
+	6250 3800 6250 4000
+Wire Wire Line
+	6250 4000 6500 4000
+Connection ~ 6500 4000
+Text Label 6500 4300 3    50   ~ 0
+ground
+Text Label 5750 3200 1    50   ~ 0
+power
+NoConn ~ 5250 3600
+Wire Wire Line
+	6250 3400 6250 2500
+Wire Wire Line
+	6250 2500 6350 2500
+$Comp
+L Device:R R3
+U 1 1 5FC6319F
+P 6650 2650
+F 0 "R3" H 6720 2696 50  0000 L CNN
+F 1 "R" H 6720 2605 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P20.32mm_Horizontal" V 6580 2650 50  0001 C CNN
+F 3 "~" H 6650 2650 50  0001 C CNN
+	1    6650 2650
+	1    0    0    -1  
+$EndComp
+Connection ~ 6650 2500
+Text Label 7500 2500 2    50   ~ 0
+power
+Text Label 6650 1900 1    50   ~ 0
+power
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5FC67B65
+P 8400 2550
+F 0 "J1" H 8480 2542 50  0000 L CNN
+F 1 "Conn_01x02" H 8480 2451 50  0000 L CNN
+F 2 "Battery:BatteryHolder_Keystone_3001_1x12mm" H 8400 2550 50  0001 C CNN
+F 3 "~" H 8400 2550 50  0001 C CNN
+	1    8400 2550
+	1    0    0    -1  
+$EndComp
+Text Label 8200 2550 2    50   ~ 0
+power
+Text Label 8200 2650 2    50   ~ 0
+ground
+$Comp
+L Device:LED D5
+U 1 1 5FC6CAC5
+P 6500 2350
+F 0 "D5" V 6539 2233 50  0000 R CNN
+F 1 "LED" V 6448 2233 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 6500 2350 50  0001 C CNN
+F 3 "~" H 6500 2350 50  0001 C CNN
+	1    6500 2350
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6500 2500
+Wire Wire Line
+	6500 2500 6650 2500
+$Comp
+L Device:LED D3
+U 1 1 5FC6D21E
+P 6350 2350
+F 0 "D3" V 6389 2233 50  0000 R CNN
+F 1 "LED" V 6298 2233 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 6350 2350 50  0001 C CNN
+F 3 "~" H 6350 2350 50  0001 C CNN
+	1    6350 2350
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6350 2500
+Wire Wire Line
+	6350 2500 6500 2500
+Wire Wire Line
+	6650 2200 6500 2200
+Connection ~ 6650 2200
+Wire Wire Line
+	6500 2200 6350 2200
+Connection ~ 6500 2200
+$Comp
+L Device:LED D6
+U 1 1 5FC6DCCC
+P 6500 2950
+F 0 "D6" V 6539 2833 50  0000 R CNN
+F 1 "LED" V 6448 2833 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 6500 2950 50  0001 C CNN
+F 3 "~" H 6500 2950 50  0001 C CNN
+	1    6500 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 5FC6E120
+P 6350 2950
+F 0 "D4" V 6389 2833 50  0000 R CNN
+F 1 "LED" V 6298 2833 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 6350 2950 50  0001 C CNN
+F 3 "~" H 6350 2950 50  0001 C CNN
+	1    6350 2950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6650 2800 6500 2800
+Connection ~ 6650 2800
+Wire Wire Line
+	6500 2800 6350 2800
+Connection ~ 6500 2800
+Wire Wire Line
+	6650 3100 6500 3100
+Wire Wire Line
+	6500 3100 6350 3100
+Connection ~ 6500 3100
+Wire Wire Line
+	6650 3100 6650 3300
+Connection ~ 6650 3100
+Text Label 6650 3300 2    50   ~ 0
+ground
+$EndSCHEMATC
