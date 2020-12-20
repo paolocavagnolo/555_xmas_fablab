@@ -35,4 +35,38 @@ Se collegate l'alimentazione alla 5V (tagliando un cavetto USB e collegando il f
 | resistenza 3  | 1 kOhm    |    1  |
 | resistenza 4  | 1 kOhm    |    1  |
 
+## Come si monta il kit?
+[saldatore]!(https://github.com/paolocavagnolo/555_xmas_fablab/blob/main/img/saldatore.jpg)
+
+Il kit è pronto per essere saldato, ti servirà un saldatore e dello stagno. Se non li hai ricevuti per regalo puoi provare a chiederli in prestito a qualcuno oppure venire al Fablab.
+
+Se proprio non c'è nessuno che ti possa aiutare con le prime saldature puoi provare a cercare dei tutorial su youtube, ma qualcuno a fianco è più piacevole oltre che più sicuro.
+
+### Saldare è l'unica possibilità?
+
+Certo che no. Se hai intenzione di studiare il circuito cambiando componenti o valori delle resistenze è più facile usare una breadboard:
+[breadboard]!(https://github.com/paolocavagnolo/555_xmas_fablab/blob/main/img/breadboard.jpg)
+La trovi in qualsiasi negozio di elettronica
+
+
+### Come è fatto il circuito?
+
+Per il circuito abbiamo preso spunto da qui:
+https://www.petervis.com/GCSE_Design_and_Technology_Electronic_Products/simple-555-circuits/555-timer-dual-led-flasher.html
+
+riadattandolo per farlo funzionare con una pila da 3V
+
+[circuito]!(https://github.com/paolocavagnolo/555_xmas_fablab/blob/main/img/circuito.png)
+
+## Note
+
+### Alimentazione e durata batteria
+Questo circuito non nasce per lavorare a 3V, ma a 5V. A 3 è un po' al limite, quindi basta che la tensioni si abbassi un pochettino e il led non si accenderanno più.
+
+Le batterie, man mano che si scaricano, abbassano leggermente la tensione. Nel nostro caso questo significa che con 6 Led rossi dopo circa un giorno di funzionamento continuo i led si spegneranno.
+
+### Differenza di luminosità nei led
+E' normale che i led di destra risultino meno luminosi di quelli di sinistra, è una caratteristica del circuito che funziona a 3V. Lavorando a 5V e modificando il valore delle resistenze funzionerà tutto bene!
+
+
 
