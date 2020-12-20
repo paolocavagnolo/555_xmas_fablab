@@ -36,7 +36,7 @@ Se collegate l'alimentazione alla 5V (tagliando un cavetto USB e collegando il f
 | resistenza 4  | 1 kOhm    |    1  |
 
 ## Come si monta il kit?
-[saldatore]!(https://github.com/paolocavagnolo/555_xmas_fablab/blob/main/img/saldatore.jpg)
+![saldatore](https://github.com/paolocavagnolo/555_xmas_fablab/blob/main/img/saldatore.jpg)
 
 Il kit è pronto per essere saldato, ti servirà un saldatore e dello stagno. Se non li hai ricevuti per regalo puoi provare a chiederli in prestito a qualcuno oppure venire al Fablab.
 
@@ -45,7 +45,7 @@ Se proprio non c'è nessuno che ti possa aiutare con le prime saldature puoi pro
 ### Saldare è l'unica possibilità?
 
 Certo che no. Se hai intenzione di studiare il circuito cambiando componenti o valori delle resistenze è più facile usare una breadboard:
-[breadboard]!(https://github.com/paolocavagnolo/555_xmas_fablab/blob/main/img/breadboard.jpg)
+![breadboard](https://github.com/paolocavagnolo/555_xmas_fablab/blob/main/img/breadboard.jpg)
 La trovi in qualsiasi negozio di elettronica
 
 
@@ -56,7 +56,7 @@ https://www.petervis.com/GCSE_Design_and_Technology_Electronic_Products/simple-5
 
 riadattandolo per farlo funzionare con una pila da 3V
 
-[circuito]!(https://github.com/paolocavagnolo/555_xmas_fablab/blob/main/img/circuito.png)
+![circuito](https://github.com/paolocavagnolo/555_xmas_fablab/blob/main/img/circuito.png)
 
 ## Note
 
