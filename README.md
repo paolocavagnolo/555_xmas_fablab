@@ -68,5 +68,7 @@ Le batterie, man mano che si scaricano, abbassano leggermente la tensione. Nel n
 ### Differenza di luminosità nei led
 E' normale che i led di destra risultino meno luminosi di quelli di sinistra, è una caratteristica del circuito che funziona a 3V. Lavorando a 5V e modificando il valore delle resistenze funzionerà tutto bene!
 
+### Bella la pcb, se volessi modificarla o produrla da me?
+Nella cartella kiCad in questo repository trovi tutti i file che abbiamo usato per far produrre la pcb.
 
 
